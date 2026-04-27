@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    color: #333;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #1f4e79;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+.formulario-tarea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario-tarea input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.formulario-tarea button {
+    padding: 12px 18px;
+    border: none;
+    background: #1f4e79;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario-tarea button:hover {
+    background: #163b5c;
+}
+
+.resumen {
+    display: flex;
+    justify-content: space-between;
+    background: #eaf2f8;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.lista-tareas h2 {
+    margin-bottom: 15px;
+    color: #1f4e79;
+}
+
+#listaTareas {
+    list-style: none;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafc;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1f4e79;
+    border-radius: 8px;
+}
+
+.tarea.completada {
+    background: #e3f6e8;
+    border-left: 5px solid #2e8b57;
+}
+
+.tarea.completada .texto-tarea {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.texto-tarea {
+    flex: 1;
+    font-size: 15px;
+}
+
+.acciones {
+    display: flex;
+    gap: 6px;
+}
+
+.acciones button {
+    border: none;
+    padding: 7px 9px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+}
+
+.btn-completar {
+    background: #2e8b57;
+}
+
+.btn-editar {
+    background: #f0ad4e;
+}
+
+.btn-eliminar {
+    background: #d9534f;
+}
+
+.btn-completar:hover {
+    background: #246b43;
+}
+
+.btn-editar:hover {
+    background: #c98930;
+}
+
+.btn-eliminar:hover {
+    background: #b23c38;
+}
+
+@media (max-width: 600px) {
+    .formulario-tarea {
+        flex-direction: column;
+    }
+
+    .resumen {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tarea {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

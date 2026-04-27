@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <h1>Gestión de Tareas</h1>
+            <p>Organiza tus actividades de forma sencilla y eficiente.</p>
+        </header>
+
+        <section class="formulario-tarea">
+            <input 
+                type="text" 
+                id="inputTarea" 
+                placeholder="Escribe una nueva tarea..."
+            >
+            <button id="btnAgregar">Agregar tarea</button>
+        </section>
+
+        <section class="resumen">
+            <p>Total de tareas: <span id="totalTareas">0</span></p>
+            <p>Completadas: <span id="tareasCompletadas">0</span></p>
+            <p>Pendientes: <span id="tareasPendientes">0</span></p>
+        </section>
+
+        <section class="lista-tareas">
+            <h2>Lista de tareas</h2>
+            <ul id="listaTareas"></ul>
+        </section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
