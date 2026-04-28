@@ -21,7 +21,7 @@ function agregarTarea() {
     const texto = inputTarea.value.trim();
 
     if (texto === "") {
-        alert("Por favor, ingrese una tarea.");
+        alert("Por favor, ingresar una tarea.");
         return;
     }
 
