@@ -1,3 +1,4 @@
+
 const inputTarea = document.getElementById("inputTarea");
 const btnAgregar = document.getElementById("btnAgregar");
 const listaTareas = document.getElementById("listaTareas");
@@ -134,3 +135,4 @@ function actualizarResumen() {
     tareasCompletadas.textContent = completadas;
     tareasPendientes.textContent = pendientes;
 }
+
